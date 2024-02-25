@@ -177,7 +177,9 @@ open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITab
         let attributedString = NSMutableAttributedString(attributedString: textView.attributedText)
         let newAttributedString = NSAttributedString(string: newText, attributes: typingTextAttributes)
         attributedString.append(newAttributedString)
-        textView.attributedText = attributedString
+        textView.textStorage.beginEditing()
+        textView.textStorage.setAttributedString(attributedString)
+        textView.textStorage.endEditing()
         reloadData()
         return true
     }
@@ -309,10 +311,11 @@ open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITab
         if appendSpaceOnCompletion {
             newAttributedText.append(NSAttributedString(string: " ", attributes: typingTextAttributes))
         }
-        // Set to blank string to stop system autocomplete from clobbering replacement
-        textView.attributedText = NSAttributedString()
-
-        textView.attributedText = newAttributedText
+        
+        textView.textStorage.beginEditing()
+        textView.textStorage.setAttributedString(newAttributedText)
+        textView.textStorage.endEditing()
+        
     }
     
     /// Initializes a session with a new `AutocompleteSession` object
@@ -405,8 +408,12 @@ open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITab
                     guard intersection.length > 0 else { return }
                     
                     let emptyString = NSAttributedString(string: "", attributes: typingTextAttributes)
-                    textView.attributedText = textView.attributedText.replacingCharacters(in: subrange, with: emptyString)
+                    
+                    textView.textStorage.beginEditing()
+                    textView.textStorage.setAttributedString(textView.attributedText.replacingCharacters(in: subrange, with: emptyString))
                     textView.selectedRange = NSRange(location: subrange.location, length: 0)
+                    textView.textStorage.endEditing()
+                    
                     stop.pointee = true
                 }
                 unregisterCurrentSession()
@@ -427,8 +434,12 @@ open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITab
                     let mutable = NSMutableAttributedString(attributedString: textView.attributedText)
                     mutable.setAttributes(typingTextAttributes, range: subrange)
                     let replacementText = NSAttributedString(string: text, attributes: typingTextAttributes)
-                    textView.attributedText = mutable.replacingCharacters(in: range, with: replacementText)
+                    
+                    textView.textStorage.beginEditing()
+                    textView.textStorage.setAttributedString(mutable.replacingCharacters(in: range, with: replacementText))
                     textView.selectedRange = NSRange(location: range.location + text.count, length: 0)
+                    textView.textStorage.endEditing()
+                    
                     stop.pointee = true
                 }
                 unregisterCurrentSession()
