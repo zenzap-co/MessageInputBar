@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     s.swift_version = '4.2'
 
     s.ios.deployment_target = '9.0'
-    s.source = { :git => 'https://github.com/zenzap-co/MessageKit/MessageInputBar.git', :tag => s.version }
+    s.source = { :git => 'https://github.com/zenzap-co/MessageInputBar.git', :tag => s.version }
 
     # 3 - License
     s.license = { :type => "MIT", :file => "LICENSE.md" }
