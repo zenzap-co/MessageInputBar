@@ -24,7 +24,17 @@
 
 import UIKit
 
-open class AutocompleteTableView: UITableView {
+open class AutocompleteTableView: UITableView, InputItem {
+    
+    public var messageInputBar: MessageInputBar?
+    
+    public var parentStackViewPosition: InputStackView.Position?
+    
+    public func textViewDidChangeAction(with textView: InputTextView) {}
+    
+    public func keyboardEditingEndsAction() {}
+    
+    public func keyboardEditingBeginsAction() {}
     
     /// The max visible rows visible in the autocomplete table before the user has to scroll throught them
     open var maxVisibleRows = 3 {
