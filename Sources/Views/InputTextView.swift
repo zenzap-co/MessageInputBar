@@ -33,9 +33,19 @@ import UIKit
  3. Default placeholder text is "New Message"
  4. Will pass a pasted image it's `MessageInputBar`'s `InputManager`s
  */
+
+
+public protocol InputTextViewTextPasteDelegate: AnyObject {
+    func inputTextViewDidPaste(text: String)
+}
+
 open class InputTextView: UITextView {
     
     // MARK: - Properties
+    
+    open weak var textPasteDelegate: InputTextViewTextPasteDelegate?
+    
+    public var canChangeTextTo: ((String) -> Bool)?
     
     open override var text: String! {
         didSet {
@@ -229,7 +239,16 @@ open class InputTextView: UITextView {
     open override func paste(_ sender: Any?) {
         
         guard let image = UIPasteboard.general.image else {
-            return super.paste(sender)
+            if let string = UIPasteboard.general.string, let textPasteDelegate {
+                // if the textPasteDelegate is set, that means that some other actor is
+                // interested in handling text only pastes manually. For example,
+                // a text view that only displayes attributed text and wants to
+                // convert regular text pastes to attributed.
+                textPasteDelegate.inputTextViewDidPaste(text: string)
+                return
+            } else {
+                return super.paste(sender)
+            }
         }
         if isImagePasteEnabled {
             pasteImageInTextContainer(with: image)

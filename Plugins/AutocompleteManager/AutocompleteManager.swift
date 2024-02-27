@@ -377,6 +377,10 @@ open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITab
     
     public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         
+        // forwarding this specific delegate call, since auto complete is taking over the delegate
+        guard (textView as? InputTextView)?.canChangeTextTo?(text) != false else {
+            return false
+        }
         // Ensure that the text to be inserted is not using previous attributes
         preserveTypingAttributes()
         
