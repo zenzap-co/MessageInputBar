@@ -23,7 +23,7 @@
  */
 
 import UIKit
-import Core
+import MessageInputBar
 
 open class AutocompleteCell: UITableViewCell {
     

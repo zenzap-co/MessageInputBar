@@ -9,27 +9,27 @@ let package = Package(
     products: [
         .library(
             name: "MessageInputBar",
-            targets: ["Core", "AttachmentManager", "AutocompleteManager"]),
+            targets: ["MessageInputBar", "AttachmentManager", "AutocompleteManager"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "Core",
+            name: "MessageInputBar",
             path: "Sources"
         ),
         .target(
             name: "AttachmentManager",
-            dependencies: ["Core"],
+            dependencies: ["MessageInputBar"],
             path: "Plugins/AttachmentManager"
         ),
         .target(
             name: "AutocompleteManager",
-            dependencies: ["Core"],
+            dependencies: ["MessageInputBar"],
             path: "Plugins/AutocompleteManager"
         ),
         .testTarget(
             name: "MessageInputBarTests",
-            dependencies: ["Core", "AttachmentManager", "AutocompleteManager"],
+            dependencies: ["MessageInputBar", "AttachmentManager", "AutocompleteManager"],
             path: "Tests"
         )
     ],
