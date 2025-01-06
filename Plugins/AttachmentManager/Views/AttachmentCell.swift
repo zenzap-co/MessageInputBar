@@ -23,6 +23,7 @@
  */
 
 import UIKit
+import Core
 
 open class AttachmentCell: UICollectionViewCell {
     
@@ -48,6 +49,7 @@ open class AttachmentCell: UICollectionViewCell {
     }
     
     open lazy var deleteButton: UIButton = { [weak self] in
+        guard let self else { return UIButton() }
         let button = UIButton()
         button.setAttributedTitle(NSMutableAttributedString().bold("X", fontSize: 15, textColor: .white), for: .normal)
         button.setAttributedTitle(NSMutableAttributedString().bold("X", fontSize: 15, textColor: UIColor.white.withAlphaComponent(0.5)), for: .highlighted)

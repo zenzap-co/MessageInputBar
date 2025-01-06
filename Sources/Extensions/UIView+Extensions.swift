@@ -26,7 +26,7 @@ import UIKit
 
 extension UIView {
     
-    internal func fillSuperview() {
+    public func fillSuperview() {
         guard let superview = self.superview else {
             return
         }
@@ -41,7 +41,7 @@ extension UIView {
 	    NSLayoutConstraint.activate(constraints)
     }
 
-    internal func centerInSuperview() {
+    public func centerInSuperview() {
         guard let superview = self.superview else {
             return
         }
@@ -53,7 +53,7 @@ extension UIView {
         NSLayoutConstraint.activate(constraints)
     }
     
-    internal func constraint(equalTo size: CGSize) {
+    public func constraint(equalTo size: CGSize) {
         guard superview != nil else { return }
         translatesAutoresizingMaskIntoConstraints = false
         let constraints: [NSLayoutConstraint] = [
@@ -65,7 +65,7 @@ extension UIView {
     }
 
     @discardableResult
-    internal func addConstraints(_ top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, topConstant: CGFloat = 0, leftConstant: CGFloat = 0, bottomConstant: CGFloat = 0, rightConstant: CGFloat = 0, widthConstant: CGFloat = 0, heightConstant: CGFloat = 0) -> [NSLayoutConstraint] {
+    public func addConstraints(_ top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, topConstant: CGFloat = 0, leftConstant: CGFloat = 0, bottomConstant: CGFloat = 0, rightConstant: CGFloat = 0, widthConstant: CGFloat = 0, heightConstant: CGFloat = 0) -> [NSLayoutConstraint] {
         
         if self.superview == nil {
             return []

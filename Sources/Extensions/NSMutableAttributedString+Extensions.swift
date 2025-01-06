@@ -24,10 +24,10 @@
 
 import UIKit
 
-extension NSMutableAttributedString {
+public  extension NSMutableAttributedString {
  
     @discardableResult
-    internal func bold(_ text: String, fontSize: CGFloat = UIFont.preferredFont(forTextStyle: .body).pointSize, textColor: UIColor = .black) -> NSMutableAttributedString {
+    func bold(_ text: String, fontSize: CGFloat = UIFont.preferredFont(forTextStyle: .body).pointSize, textColor: UIColor = .black) -> NSMutableAttributedString {
         let attrs: [NSAttributedString.Key:AnyObject] = [
             NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: fontSize),
             NSAttributedString.Key.foregroundColor : textColor
@@ -38,7 +38,7 @@ extension NSMutableAttributedString {
     }
     
     @discardableResult
-    internal func normal(_ text: String, fontSize: CGFloat = UIFont.preferredFont(forTextStyle: .body).pointSize, textColor: UIColor = .black) -> NSMutableAttributedString {
+    func normal(_ text: String, fontSize: CGFloat = UIFont.preferredFont(forTextStyle: .body).pointSize, textColor: UIColor = .black) -> NSMutableAttributedString {
         let attrs:[NSAttributedString.Key:AnyObject] = [
             NSAttributedString.Key.font : UIFont.systemFont(ofSize: fontSize),
             NSAttributedString.Key.foregroundColor : textColor
@@ -50,21 +50,21 @@ extension NSMutableAttributedString {
 
 }
 
-extension NSAttributedString {
+public extension NSAttributedString {
 
-    internal func replacingCharacters(in range: NSRange, with attributedString: NSAttributedString) -> NSMutableAttributedString {
+    func replacingCharacters(in range: NSRange, with attributedString: NSAttributedString) -> NSMutableAttributedString {
         let ns = NSMutableAttributedString(attributedString: self)
         ns.replaceCharacters(in: range, with: attributedString)
         return ns
     }
     
-    internal static func += (lhs: inout NSAttributedString, rhs: NSAttributedString) {
+    static func += (lhs: inout NSAttributedString, rhs: NSAttributedString) {
         let ns = NSMutableAttributedString(attributedString: lhs)
         ns.append(rhs)
         lhs = ns
     }
     
-    internal static func + (lhs: NSAttributedString, rhs: NSAttributedString) -> NSAttributedString {
+    static func + (lhs: NSAttributedString, rhs: NSAttributedString) -> NSAttributedString {
         let ns = NSMutableAttributedString(attributedString: lhs)
         ns.append(rhs)
         return NSAttributedString(attributedString: ns)

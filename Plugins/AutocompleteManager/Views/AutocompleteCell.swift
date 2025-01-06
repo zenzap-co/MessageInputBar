@@ -23,6 +23,7 @@
  */
 
 import UIKit
+import Core
 
 open class AutocompleteCell: UITableViewCell {
     
