@@ -9,17 +9,14 @@ let package = Package(
     products: [
         .library(
             name: "MessageInputBar",
-            type: .dynamic,  // Made dynamic
             targets: ["MessageInputBar"]
         ),
         .library(
             name: "AttachmentManager",
-            type: .dynamic,  // Made dynamic
             targets: ["AttachmentManager"]
         ),
         .library(
             name: "AutocompleteManager",
-            type: .dynamic,  // Made dynamic
             targets: ["AutocompleteManager"]
         ),
     ],
