@@ -9,13 +9,26 @@ let package = Package(
     products: [
         .library(
             name: "MessageInputBar",
-            targets: ["MessageInputBar", "AttachmentManager", "AutocompleteManager"]),
+            targets: ["MessageInputBar"]
+        ),
+        .library(
+            name: "AttachmentManager",
+            targets: ["AttachmentManager"]
+        ),
+        .library(
+            name: "AutocompleteManager",
+            targets: ["AutocompleteManager"]
+        ),
     ],
     dependencies: [],
     targets: [
         .target(
             name: "MessageInputBar",
-            path: "Sources"
+            path: "Sources",
+            exclude: [
+                "Sources/MessageInputBar.h",
+                "Sources/Info.plist"
+            ]
         ),
         .target(
             name: "AttachmentManager",
@@ -29,7 +42,11 @@ let package = Package(
         ),
         .testTarget(
             name: "MessageInputBarTests",
-            dependencies: ["MessageInputBar", "AttachmentManager", "AutocompleteManager"],
+            dependencies: [
+                "MessageInputBar",
+                "AttachmentManager",
+                "AutocompleteManager"
+            ],
             path: "Tests"
         )
     ],
