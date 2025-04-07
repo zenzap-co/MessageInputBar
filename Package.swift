@@ -25,8 +25,11 @@ let package = Package(
         .target(
             name: "MessageInputBar",
             path: "Sources",
+            publicHeadersPath: ".", // Exposes MessageInputBar.h if it's in Sources/
+            cSettings: [
+                .headerSearchPath(".")
+            ],
             exclude: [
-                "Sources/MessageInputBar.h",
                 "Sources/Info.plist"
             ]
         ),
