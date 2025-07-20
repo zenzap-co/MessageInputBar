@@ -647,6 +647,24 @@ open class MessageInputBar: UIView {
         }
     }
     
+    open func addTopStackViewItem(_ item: InputItem, animated: Bool = false) {
+        performLayout(animated) { [weak self] in
+            guard let self else { return }
+            
+            topStackViewItems.append(item)
+            item.messageInputBar = self
+            item.parentStackViewPosition = .top
+            
+            if let view = item as? UIView {
+                topStackView.addArrangedSubview(view)
+            }
+            
+            guard superview != nil else { return }
+            topStackView.layoutIfNeeded()
+            invalidateIntrinsicContentSize()
+        }
+    }
+    
     /// Sets the leftStackViewWidthConstant
     ///
     /// - Parameters:
