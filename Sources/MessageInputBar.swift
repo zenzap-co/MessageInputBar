@@ -665,6 +665,25 @@ open class MessageInputBar: UIView {
         }
     }
     
+    open func removeTopStackViewItem(_ item: InputItem, animated: Bool = false) {
+        performLayout(animated) { [weak self] in
+            guard let self else { return }
+            
+            topStackViewItems.removeAll(where: { $0 === item })
+            item.messageInputBar = nil
+            item.parentStackViewPosition = nil
+            
+            if let view = item as? UIView {
+                topStackView.removeArrangedSubview(view)
+                view.removeFromSuperview()
+            }
+            
+            guard superview != nil else { return }
+            topStackView.layoutIfNeeded()
+            invalidateIntrinsicContentSize()
+        }
+    }
+    
     /// Sets the leftStackViewWidthConstant
     ///
     /// - Parameters:
