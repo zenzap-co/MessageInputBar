@@ -653,11 +653,12 @@ open class MessageInputBar: UIView {
     ///   - item: New item to add to topStackView arranged views
     ///   - animated: If the layout should be animated
     ///
-    ///  - No verification or cheking if item already exist
-    ///
     open func addTopStackViewItem(_ item: InputItem, animated: Bool = false) {
         performLayout(animated) { [weak self] in
-            guard let self else { return }
+            guard
+                let self,
+                topStackView.arrangedSubviews.contains(where: { $0 === item }) == false
+            else { return }
             
             topStackViewItems.append(item)
             item.messageInputBar = self
@@ -683,14 +684,19 @@ open class MessageInputBar: UIView {
         performLayout(animated) { [weak self] in
             guard let self else { return }
             
-            topStackViewItems.removeAll(where: { $0 === item })
-            item.messageInputBar = nil
-            item.parentStackViewPosition = nil
-            
-            if let view = item as? UIView {
-                topStackView.removeArrangedSubview(view)
-                view.removeFromSuperview()
+            defer {
+                topStackViewItems.removeAll(where: { $0 === item })
+                item.messageInputBar = nil
+                item.parentStackViewPosition = nil
             }
+            
+            guard
+                let view = item as? UIView,
+                topStackView.arrangedSubviews.contains(where: { $0 === view })
+            else { return }
+            
+            topStackView.removeArrangedSubview(view)
+            view.removeFromSuperview()
             
             guard superview != nil else { return }
             topStackView.layoutIfNeeded()
