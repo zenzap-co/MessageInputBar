@@ -647,6 +647,63 @@ open class MessageInputBar: UIView {
         }
     }
     
+    /// Add a single item to the arranged subviews of the topStackView.
+    ///
+    /// - Parameters:
+    ///   - item: New item to add to topStackView arranged views
+    ///   - animated: If the layout should be animated
+    ///
+    open func addTopStackViewItem(_ item: InputItem, animated: Bool = false) {
+        performLayout(animated) { [weak self] in
+            guard
+                let self,
+                topStackView.arrangedSubviews.contains(where: { $0 === item }) == false
+            else { return }
+            
+            topStackViewItems.append(item)
+            item.messageInputBar = self
+            item.parentStackViewPosition = .top
+            
+            if let view = item as? UIView {
+                topStackView.addArrangedSubview(view)
+            }
+            
+            guard superview != nil else { return }
+            topStackView.layoutIfNeeded()
+            invalidateIntrinsicContentSize()
+        }
+    }
+    
+    /// Remove a single item from the arranged subviews of the topStackView.
+    ///
+    /// - Parameters:
+    ///   - item: The item to remove from topStackView arranged views
+    ///   - animated: If the layout should be animated
+    ///
+    open func removeTopStackViewItem(_ item: InputItem, animated: Bool = false) {
+        performLayout(animated) { [weak self] in
+            guard let self else { return }
+            
+            defer {
+                topStackViewItems.removeAll(where: { $0 === item })
+                item.messageInputBar = nil
+                item.parentStackViewPosition = nil
+            }
+            
+            guard
+                let view = item as? UIView,
+                topStackView.arrangedSubviews.contains(where: { $0 === view })
+            else { return }
+            
+            topStackView.removeArrangedSubview(view)
+            view.removeFromSuperview()
+            
+            guard superview != nil else { return }
+            topStackView.layoutIfNeeded()
+            invalidateIntrinsicContentSize()
+        }
+    }
+    
     /// Sets the leftStackViewWidthConstant
     ///
     /// - Parameters:
