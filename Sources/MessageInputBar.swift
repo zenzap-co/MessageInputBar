@@ -647,6 +647,14 @@ open class MessageInputBar: UIView {
         }
     }
     
+    /// Add a single item to the arranged subviews of the topStackView.
+    ///
+    /// - Parameters:
+    ///   - item: New item to add to topStackView arranged views
+    ///   - animated: If the layout should be animated
+    ///
+    ///  - No verification or cheking if item already exist
+    ///
     open func addTopStackViewItem(_ item: InputItem, animated: Bool = false) {
         performLayout(animated) { [weak self] in
             guard let self else { return }
@@ -665,6 +673,12 @@ open class MessageInputBar: UIView {
         }
     }
     
+    /// Remove a single item from the arranged subviews of the topStackView.
+    ///
+    /// - Parameters:
+    ///   - item: The item to remove from topStackView arranged views
+    ///   - animated: If the layout should be animated
+    ///
     open func removeTopStackViewItem(_ item: InputItem, animated: Bool = false) {
         performLayout(animated) { [weak self] in
             guard let self else { return }
