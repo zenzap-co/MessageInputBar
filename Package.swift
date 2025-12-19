@@ -1,0 +1,51 @@
+// swift-tools-version:5.3
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
+let package = Package(
+    name: "MessageInputBar",
+    platforms: [
+        .iOS(.v9)
+    ],
+    products: [
+        // Core MessageInputBar library
+        .library(
+            name: "MessageInputBar",
+            targets: ["MessageInputBar"]),
+        // AttachmentManager plugin
+        .library(
+            name: "MessageInputBarAttachmentManager",
+            targets: ["MessageInputBarAttachmentManager"]),
+        // AutocompleteManager plugin
+        .library(
+            name: "MessageInputBarAutocompleteManager",
+            targets: ["MessageInputBarAutocompleteManager"]),
+    ],
+    dependencies: [
+        // No external dependencies
+    ],
+    targets: [
+        // Core target
+        .target(
+            name: "MessageInputBar",
+            dependencies: [],
+            path: "Sources"),
+        // AttachmentManager plugin target
+        .target(
+            name: "MessageInputBarAttachmentManager",
+            dependencies: ["MessageInputBar"],
+            path: "Plugins/AttachmentManager"),
+        // AutocompleteManager plugin target
+        .target(
+            name: "MessageInputBarAutocompleteManager",
+            dependencies: ["MessageInputBar"],
+            path: "Plugins/AutocompleteManager"),
+        // Tests
+        .testTarget(
+            name: "MessageInputBarTests",
+            dependencies: ["MessageInputBar"],
+            path: "Tests"),
+    ],
+    swiftLanguageVersions: [.v4_2]
+)
