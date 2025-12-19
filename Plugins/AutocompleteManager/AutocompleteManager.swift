@@ -23,6 +23,7 @@
  */
 
 import UIKit
+import MessageInputBar
 
 open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITableViewDelegate, UITableViewDataSource {
     
