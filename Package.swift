@@ -12,7 +12,7 @@ let package = Package(
         // Core MessageInputBar library
         .library(
             name: "MessageInputBar",
-            targets: ["MessageInputBar"]),
+            targets: ["MessageInputBarCore"]),
         // AttachmentManager plugin
         .library(
             name: "MessageInputBarAttachmentManager",
@@ -26,9 +26,9 @@ let package = Package(
         // No external dependencies
     ],
     targets: [
-        // Core target
+        // Core target - named differently from product to allow SPM to build dynamically when needed
         .target(
-            name: "MessageInputBar",
+            name: "MessageInputBarCore",
             dependencies: [],
             path: "Sources",
             exclude: ["Info.plist"],
@@ -37,17 +37,17 @@ let package = Package(
         // AttachmentManager plugin target
         .target(
             name: "MessageInputBarAttachmentManager",
-            dependencies: ["MessageInputBar"],
+            dependencies: ["MessageInputBarCore"],
             path: "Plugins/AttachmentManager"),
         // AutocompleteManager plugin target
         .target(
             name: "MessageInputBarAutocompleteManager",
-            dependencies: ["MessageInputBar"],
+            dependencies: ["MessageInputBarCore"],
             path: "Plugins/AutocompleteManager"),
         // Tests
         .testTarget(
             name: "MessageInputBarTests",
-            dependencies: ["MessageInputBar"],
+            dependencies: ["MessageInputBarCore"],
             path: "Tests"),
     ],
     swiftLanguageVersions: [.v5]
