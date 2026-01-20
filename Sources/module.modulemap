@@ -1,0 +1,6 @@
+framework module MessageInputBar {
+    umbrella header "MessageInputBar.h"
+
+    export *
+    module * { export * }
+}
