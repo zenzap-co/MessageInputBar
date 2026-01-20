@@ -23,7 +23,7 @@
  */
 
 import XCTest
-@testable import MessageInputBar
+@testable import MessageInputBarCore
 
 class MessageInputBarTests: XCTestCase {
 
