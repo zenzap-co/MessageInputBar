@@ -9,10 +9,11 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
-        // Core MessageInputBar library
+        // Core MessageInputBar library - explicit dynamic to allow sharing when multiple targets depend on it
         .library(
             name: "MessageInputBar",
-            targets: ["MessageInputBarCore"]),
+            type: .dynamic,
+            targets: ["MessageInputBar"]),
         // AttachmentManager plugin
         .library(
             name: "MessageInputBarAttachmentManager",
@@ -26,9 +27,9 @@ let package = Package(
         // No external dependencies
     ],
     targets: [
-        // Core target - named differently from product to allow SPM to build dynamically when needed
+        // Core target
         .target(
-            name: "MessageInputBarCore",
+            name: "MessageInputBar",
             dependencies: [],
             path: "Sources",
             exclude: ["Info.plist"],
@@ -37,17 +38,17 @@ let package = Package(
         // AttachmentManager plugin target
         .target(
             name: "MessageInputBarAttachmentManager",
-            dependencies: ["MessageInputBarCore"],
+            dependencies: ["MessageInputBar"],
             path: "Plugins/AttachmentManager"),
         // AutocompleteManager plugin target
         .target(
             name: "MessageInputBarAutocompleteManager",
-            dependencies: ["MessageInputBarCore"],
+            dependencies: ["MessageInputBar"],
             path: "Plugins/AutocompleteManager"),
         // Tests
         .testTarget(
             name: "MessageInputBarTests",
-            dependencies: ["MessageInputBarCore"],
+            dependencies: ["MessageInputBar"],
             path: "Tests"),
     ],
     swiftLanguageVersions: [.v5]
