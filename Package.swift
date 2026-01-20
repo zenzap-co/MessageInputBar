@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "MessageInputBar",
     platforms: [
-        .iOS(.v9)
+        .iOS(.v13)
     ],
     products: [
         // Core MessageInputBar library
@@ -30,7 +30,10 @@ let package = Package(
         .target(
             name: "MessageInputBar",
             dependencies: [],
-            path: "Sources"),
+            path: "Sources",
+            exclude: ["Info.plist"],
+            publicHeadersPath: "."
+        ),
         // AttachmentManager plugin target
         .target(
             name: "MessageInputBarAttachmentManager",
@@ -47,5 +50,5 @@ let package = Package(
             dependencies: ["MessageInputBar"],
             path: "Tests"),
     ],
-    swiftLanguageVersions: [.v4_2]
+    swiftLanguageVersions: [.v5]
 )
