@@ -1,0 +1,26 @@
+{
+  "": {
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/master.swiftdeps"
+  },
+  "/Users/yaniv/Development/Projects/MessageInputBar/Tests/InputBarItemTests.swift": {
+    "dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputBarItemTests.d",
+    "object": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputBarItemTests.swift.o",
+    "swiftmodule": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputBarItemTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputBarItemTests.swiftdeps",
+    "diagnostics": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputBarItemTests.dia"
+  },
+  "/Users/yaniv/Development/Projects/MessageInputBar/Tests/InputTextViewTests.swift": {
+    "dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputTextViewTests.d",
+    "object": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputTextViewTests.swift.o",
+    "swiftmodule": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputTextViewTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputTextViewTests.swiftdeps",
+    "diagnostics": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputTextViewTests.dia"
+  },
+  "/Users/yaniv/Development/Projects/MessageInputBar/Tests/MessageInputBarTests.swift": {
+    "dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/MessageInputBarTests.d",
+    "object": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/MessageInputBarTests.swift.o",
+    "swiftmodule": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/MessageInputBarTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/MessageInputBarTests.swiftdeps",
+    "diagnostics": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/MessageInputBarTests.dia"
+  }
+}

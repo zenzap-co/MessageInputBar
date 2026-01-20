@@ -1,0 +1,1454 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.xctest/Contents/MacOS/MessageInputBarPackageTests",
+      "packagePath" : "/Users/yaniv/Development/Projects/MessageInputBar",
+      "productName" : "MessageInputBarPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MessageInputBar-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/sources",
+      "importPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Controls/InputBarButtonItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Extensions/NSMutableAttributedString+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Extensions/UIView+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/MessageInputBar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Models/NSConstraintLayoutSet.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/InputItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/InputPlugin.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/MessageInputBarDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/InputStackView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/InputTextView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/SeparatorLine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/swift-version-9DCBAC3F49F331.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MessageInputBar",
+      "moduleOutputPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBar.swiftmodule",
+      "objects" : [
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputBarButtonItem.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/NSMutableAttributedString+Extensions.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/UIView+Extensions.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/MessageInputBar.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/NSConstraintLayoutSet.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputItem.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputPlugin.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/MessageInputBarDelegate.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputStackView.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputTextView.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/SeparatorLine.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/include/MessageInputBar-Swift.h",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+        "-L",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+        "-plugin-path",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputBarButtonItem.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/NSMutableAttributedString+Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/UIView+Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/MessageInputBar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/NSConstraintLayoutSet.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputItem.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputPlugin.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/MessageInputBarDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputStackView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputTextView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/SeparatorLine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBar.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Controls/InputBarButtonItem.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Extensions/NSMutableAttributedString+Extensions.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Extensions/UIView+Extensions.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/MessageInputBar.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Models/NSConstraintLayoutSet.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/InputItem.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/InputPlugin.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/MessageInputBarDelegate.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/InputStackView.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/InputTextView.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/SeparatorLine.swift"
+      ],
+      "tempsPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MessageInputBarAttachmentManager-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/sources",
+      "importPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/AttachmentManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Protocols/AttachmentManagerDataSource.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Protocols/AttachmentManagerDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/AttachmentCell.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/AttachmentCollectionView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/ImageAttachmentCell.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/swift-version-9DCBAC3F49F331.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBar.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MessageInputBarAttachmentManager",
+      "moduleOutputPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBarAttachmentManager.swiftmodule",
+      "objects" : [
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManager.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDataSource.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDelegate.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCell.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCollectionView.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/ImageAttachmentCell.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/include/MessageInputBarAttachmentManager-Swift.h",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+        "-L",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+        "-plugin-path",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDataSource.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCell.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCollectionView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/ImageAttachmentCell.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBarAttachmentManager.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/AttachmentManager.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Protocols/AttachmentManagerDataSource.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Protocols/AttachmentManagerDelegate.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/AttachmentCell.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/AttachmentCollectionView.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/ImageAttachmentCell.swift"
+      ],
+      "tempsPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MessageInputBarAutocompleteManager-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/sources",
+      "importPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/AutocompleteManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/NSAttributedStringKey+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/String+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/UITextView+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Models/AutocompleteCompletion.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Models/AutocompleteSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDataSource.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Views/AutocompleteCell.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Views/AutocompleteTableView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/swift-version-9DCBAC3F49F331.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBar.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MessageInputBarAutocompleteManager",
+      "moduleOutputPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBarAutocompleteManager.swiftmodule",
+      "objects" : [
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteManager.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/NSAttributedStringKey+Extensions.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/String+Extensions.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/UITextView+Extensions.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteCompletion.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteSession.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteManagerDataSource.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteManagerDelegate.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteCell.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteTableView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/include/MessageInputBarAutocompleteManager-Swift.h",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+        "-L",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+        "-plugin-path",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/NSAttributedStringKey+Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/String+Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/UITextView+Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteCompletion.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteSession.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteManagerDataSource.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteManagerDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteCell.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/AutocompleteTableView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBarAutocompleteManager.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/AutocompleteManager.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/NSAttributedStringKey+Extensions.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/String+Extensions.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/UITextView+Extensions.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Models/AutocompleteCompletion.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Models/AutocompleteSession.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDataSource.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDelegate.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Views/AutocompleteCell.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Views/AutocompleteTableView.swift"
+      ],
+      "tempsPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MessageInputBarPackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build/sources",
+      "importPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/swift-version-9DCBAC3F49F331.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBarTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MessageInputBarPackageTests",
+      "moduleOutputPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBarPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build/include/MessageInputBarPackageTests-Swift.h",
+        "-I",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+        "-L",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+        "-plugin-path",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBarPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MessageInputBarTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/sources",
+      "importPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Tests/InputBarItemTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Tests/InputTextViewTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Tests/MessageInputBarTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/swift-version-9DCBAC3F49F331.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBar.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MessageInputBarTests",
+      "moduleOutputPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBarTests.swiftmodule",
+      "objects" : [
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputBarItemTests.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputTextViewTests.swift.o",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/MessageInputBarTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+        "-L",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+        "-plugin-path",
+        "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputBarItemTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputTextViewTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/MessageInputBarTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules/MessageInputBarTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/yaniv/Development/Projects/MessageInputBar/Tests/InputBarItemTests.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Tests/InputTextViewTests.swift",
+        "/Users/yaniv/Development/Projects/MessageInputBar/Tests/MessageInputBarTests.swift"
+      ],
+      "tempsPath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "MessageInputBar" : [
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MessageInputBar",
+      "-c",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Controls/InputBarButtonItem.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Extensions/NSMutableAttributedString+Extensions.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Extensions/UIView+Extensions.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/MessageInputBar.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Models/NSConstraintLayoutSet.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/InputItem.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/InputPlugin.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/MessageInputBarDelegate.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/InputStackView.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/InputTextView.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/SeparatorLine.swift",
+      "-I",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/include/MessageInputBar-Swift.h",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+      "-L",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+      "-plugin-path",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc"
+    ],
+    "MessageInputBarAttachmentManager" : [
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MessageInputBarAttachmentManager",
+      "-c",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/AttachmentManager.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Protocols/AttachmentManagerDataSource.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Protocols/AttachmentManagerDelegate.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/AttachmentCell.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/AttachmentCollectionView.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/ImageAttachmentCell.swift",
+      "-I",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/include/MessageInputBarAttachmentManager-Swift.h",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+      "-L",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+      "-plugin-path",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc"
+    ],
+    "MessageInputBarAutocompleteManager" : [
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MessageInputBarAutocompleteManager",
+      "-c",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/AutocompleteManager.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/NSAttributedStringKey+Extensions.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/String+Extensions.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/UITextView+Extensions.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Models/AutocompleteCompletion.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Models/AutocompleteSession.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDataSource.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDelegate.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Views/AutocompleteCell.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Views/AutocompleteTableView.swift",
+      "-I",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/include/MessageInputBarAutocompleteManager-Swift.h",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+      "-L",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+      "-plugin-path",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc"
+    ],
+    "MessageInputBarPackageTests" : [
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MessageInputBarPackageTests",
+      "-c",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build/include/MessageInputBarPackageTests-Swift.h",
+      "-I",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+      "-L",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+      "-plugin-path",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc"
+    ],
+    "MessageInputBarTests" : [
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MessageInputBarTests",
+      "-c",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Tests/InputBarItemTests.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Tests/InputTextViewTests.swift",
+      "/Users/yaniv/Development/Projects/MessageInputBar/Tests/MessageInputBarTests.swift",
+      "-I",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+      "-L",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/macosx/testing",
+      "-plugin-path",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "MessageInputBar" : [
+
+    ],
+    "MessageInputBarAttachmentManager" : [
+      "MessageInputBar"
+    ],
+    "MessageInputBarAutocompleteManager" : [
+      "MessageInputBar"
+    ],
+    "MessageInputBarPackageTests" : [
+      "MessageInputBarTests",
+      "MessageInputBar"
+    ],
+    "MessageInputBarTests" : [
+      "MessageInputBar"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Controls/InputBarButtonItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Extensions/NSMutableAttributedString+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Extensions/UIView+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/MessageInputBar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Models/NSConstraintLayoutSet.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/InputItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/InputPlugin.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/MessageInputBarDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/InputStackView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/InputTextView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/SeparatorLine.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/sources"
+    },
+    "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/AttachmentManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Protocols/AttachmentManagerDataSource.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Protocols/AttachmentManagerDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/AttachmentCell.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/AttachmentCollectionView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/ImageAttachmentCell.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/sources"
+    },
+    "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/AutocompleteManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/NSAttributedStringKey+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/String+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Extensions/UITextView+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Models/AutocompleteCompletion.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Models/AutocompleteSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDataSource.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Views/AutocompleteCell.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AutocompleteManager/Views/AutocompleteTableView.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAutocompleteManager.build/sources"
+    },
+    "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build/sources"
+    },
+    "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputBarButtonItem.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputItem.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputPlugin.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputStackView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/InputTextView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/MessageInputBar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/MessageInputBarDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/NSConstraintLayoutSet.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/NSMutableAttributedString+Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/SeparatorLine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBar.build/UIView+Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputBarItemTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/InputTextViewTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/MessageInputBarTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Tests/InputBarItemTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Tests/InputTextViewTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Development/Projects/MessageInputBar/Tests/MessageInputBarTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarTests.build/sources"
+    },
+    "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/swift-version-9DCBAC3F49F331.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/yaniv/Library/Developer/Toolchains/swift-6.2.1-RELEASE.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/swift-version-9DCBAC3F49F331.txt"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/Controls/InputBarButtonItem.swift
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/Extensions/NSMutableAttributedString+Extensions.swift
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/Extensions/UIView+Extensions.swift
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/MessageInputBar.swift
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/Models/NSConstraintLayoutSet.swift
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/InputItem.swift
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/InputPlugin.swift
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/Protocols/MessageInputBarDelegate.swift
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/InputStackView.swift
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/InputTextView.swift
+/Users/yaniv/Development/Projects/MessageInputBar/Sources/Views/SeparatorLine.swift

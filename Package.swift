@@ -32,7 +32,7 @@ let package = Package(
             dependencies: [],
             path: "Sources",
             exclude: ["Info.plist"],
-            publicHeadersPath: "."
+            publicHeadersPath: "include"
         ),
         // AttachmentManager plugin target
         .target(

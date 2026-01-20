@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/master.swiftdeps"
+  },
+  "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/AttachmentManager.swift": {
+    "dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManager.d",
+    "object": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManager.swift.o",
+    "swiftmodule": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManager.swiftdeps",
+    "diagnostics": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManager.dia"
+  },
+  "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Protocols/AttachmentManagerDataSource.swift": {
+    "dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDataSource.d",
+    "object": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDataSource.swift.o",
+    "swiftmodule": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDataSource~partial.swiftmodule",
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDataSource.swiftdeps",
+    "diagnostics": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDataSource.dia"
+  },
+  "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Protocols/AttachmentManagerDelegate.swift": {
+    "dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDelegate.d",
+    "object": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDelegate.swift.o",
+    "swiftmodule": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDelegate.swiftdeps",
+    "diagnostics": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentManagerDelegate.dia"
+  },
+  "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/AttachmentCell.swift": {
+    "dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCell.d",
+    "object": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCell.swift.o",
+    "swiftmodule": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCell~partial.swiftmodule",
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCell.swiftdeps",
+    "diagnostics": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCell.dia"
+  },
+  "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/AttachmentCollectionView.swift": {
+    "dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCollectionView.d",
+    "object": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCollectionView.swift.o",
+    "swiftmodule": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCollectionView~partial.swiftmodule",
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCollectionView.swiftdeps",
+    "diagnostics": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/AttachmentCollectionView.dia"
+  },
+  "/Users/yaniv/Development/Projects/MessageInputBar/Plugins/AttachmentManager/Views/ImageAttachmentCell.swift": {
+    "dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/ImageAttachmentCell.d",
+    "object": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/ImageAttachmentCell.swift.o",
+    "swiftmodule": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/ImageAttachmentCell~partial.swiftmodule",
+    "swift-dependencies": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/ImageAttachmentCell.swiftdeps",
+    "diagnostics": "/Users/yaniv/Development/Projects/MessageInputBar/.build/arm64-apple-macosx/debug/MessageInputBarAttachmentManager.build/ImageAttachmentCell.dia"
+  }
+}
