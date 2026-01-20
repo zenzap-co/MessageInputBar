@@ -9,20 +9,17 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
-        // Core MessageInputBar library - dynamic to create proper framework for Clang
+        // Core MessageInputBar library
         .library(
             name: "MessageInputBar",
-            type: .dynamic,
             targets: ["MessageInputBar"]),
         // AttachmentManager plugin
         .library(
             name: "MessageInputBarAttachmentManager",
-            type: .dynamic,
             targets: ["MessageInputBarAttachmentManager"]),
         // AutocompleteManager plugin
         .library(
             name: "MessageInputBarAutocompleteManager",
-            type: .dynamic,
             targets: ["MessageInputBarAutocompleteManager"]),
     ],
     dependencies: [
