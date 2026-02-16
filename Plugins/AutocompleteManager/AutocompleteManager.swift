@@ -417,9 +417,9 @@ open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITab
                 if let subrange = foundSubrange {
                     let emptyString = NSAttributedString(string: "", attributes: typingTextAttributes)
                     textView.textStorage.beginEditing()
-                    textView.textStorage.setAttributedString(textView.attributedText.replacingCharacters(in: subrange, with: emptyString))
-                    textView.selectedRange = NSRange(location: subrange.location, length: 0)
+                    textView.textStorage.replaceCharacters(in: subrange, with: emptyString)
                     textView.textStorage.endEditing()
+                    textView.selectedRange = NSRange(location: subrange.location, length: 0)
                 }
                 unregisterCurrentSession()
                 return false
@@ -440,13 +440,12 @@ open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITab
                     stop.pointee = true
                 }
                 if let subrange = foundSubrange {
-                    let mutable = NSMutableAttributedString(attributedString: textView.attributedText)
-                    mutable.setAttributes(typingTextAttributes, range: subrange)
                     let replacementText = NSAttributedString(string: text, attributes: typingTextAttributes)
                     textView.textStorage.beginEditing()
-                    textView.textStorage.setAttributedString(mutable.replacingCharacters(in: range, with: replacementText))
-                    textView.selectedRange = NSRange(location: range.location + text.count, length: 0)
+                    textView.textStorage.setAttributes(typingTextAttributes, range: subrange)
+                    textView.textStorage.replaceCharacters(in: range, with: replacementText)
                     textView.textStorage.endEditing()
+                    textView.selectedRange = NSRange(location: range.location + text.count, length: 0)
                 }
                 unregisterCurrentSession()
                 return false
