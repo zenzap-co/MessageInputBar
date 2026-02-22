@@ -407,45 +407,46 @@ open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITab
             let isAutocompleted = attributes[.autocompleted] as? Bool ?? false
             
             if isAutocompleted {
+                // Find the subrange first, then modify after enumeration to avoid mutating while iterating
+                var foundSubrange: NSRange?
                 textView.attributedText.enumerateAttribute(.autocompleted, in: totalRange, options: .reverse) { _, subrange, stop in
-                    
                     let intersection = NSIntersectionRange(range, subrange)
                     guard intersection.length > 0 else { return }
-                    
-                    let emptyString = NSAttributedString(string: "", attributes: typingTextAttributes)
-                    
-                    textView.textStorage.beginEditing()
-                    textView.textStorage.setAttributedString(textView.attributedText.replacingCharacters(in: subrange, with: emptyString))
-                    textView.selectedRange = NSRange(location: subrange.location, length: 0)
-                    textView.textStorage.endEditing()
-                    
+                    foundSubrange = subrange
                     stop.pointee = true
+                }
+                if let subrange = foundSubrange {
+                    let emptyString = NSAttributedString(string: "", attributes: typingTextAttributes)
+                    textView.textStorage.beginEditing()
+                    textView.textStorage.replaceCharacters(in: subrange, with: emptyString)
+                    textView.textStorage.endEditing()
+                    textView.selectedRange = NSRange(location: subrange.location, length: 0)
                 }
                 unregisterCurrentSession()
                 return false
             }
         } else if range.length >= 0, range.location < totalRange.length {
-            
+
             // Inserting text in the middle of an autocompleted string
             let attributes = textView.attributedText.attributes(at: range.location, longestEffectiveRange: nil, in: range)
             let isAutocompleted = attributes[.autocompleted] as? Bool ?? false
             if isAutocompleted {
+                // Find the subrange first, then modify after enumeration to avoid mutating while iterating
+                var foundSubrange: NSRange?
                 textView.attributedText.enumerateAttribute(.autocompleted, in: totalRange, options: .reverse) { _, subrange, stop in
-                    
                     let compareRange = range.length == 0 ? NSRange(location: range.location, length: 1) : range
                     let intersection = NSIntersectionRange(compareRange, subrange)
                     guard intersection.length > 0 else { return }
-                    
-                    let mutable = NSMutableAttributedString(attributedString: textView.attributedText)
-                    mutable.setAttributes(typingTextAttributes, range: subrange)
-                    let replacementText = NSAttributedString(string: text, attributes: typingTextAttributes)
-                    
-                    textView.textStorage.beginEditing()
-                    textView.textStorage.setAttributedString(mutable.replacingCharacters(in: range, with: replacementText))
-                    textView.selectedRange = NSRange(location: range.location + text.count, length: 0)
-                    textView.textStorage.endEditing()
-                    
+                    foundSubrange = subrange
                     stop.pointee = true
+                }
+                if let subrange = foundSubrange {
+                    let replacementText = NSAttributedString(string: text, attributes: typingTextAttributes)
+                    textView.textStorage.beginEditing()
+                    textView.textStorage.setAttributes(typingTextAttributes, range: subrange)
+                    textView.textStorage.replaceCharacters(in: range, with: replacementText)
+                    textView.textStorage.endEditing()
+                    textView.selectedRange = NSRange(location: range.location + text.count, length: 0)
                 }
                 unregisterCurrentSession()
                 return false
