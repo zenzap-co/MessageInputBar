@@ -673,7 +673,31 @@ open class MessageInputBar: UIView {
             invalidateIntrinsicContentSize()
         }
     }
-    
+
+    /// Insert a single item into the topStackView at a specific arranged-subview index
+    /// (0 = topmost). Use to place an item above existing top items (e.g. the reply strip).
+    open func insertTopStackViewItem(_ item: InputItem, at index: Int, animated: Bool = false) {
+        performLayout(animated) { [weak self] in
+            guard
+                let self,
+                topStackView.arrangedSubviews.contains(where: { $0 === item }) == false
+            else { return }
+
+            let clamped = max(0, min(index, topStackViewItems.count))
+            topStackViewItems.insert(item, at: clamped)
+            item.messageInputBar = self
+            item.parentStackViewPosition = .top
+
+            if let view = item as? UIView {
+                topStackView.insertArrangedSubview(view, at: clamped)
+            }
+
+            guard superview != nil else { return }
+            topStackView.layoutIfNeeded()
+            invalidateIntrinsicContentSize()
+        }
+    }
+
     /// Remove a single item from the arranged subviews of the topStackView.
     ///
     /// - Parameters:
